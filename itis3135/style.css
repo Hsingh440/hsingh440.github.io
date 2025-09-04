@@ -21,19 +21,19 @@ body {
     max-width: 950px;
     margin: auto;
     text-align: center;
-<<<<<<< Updated upstream
+
 }	
 p {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: large;
 }
 
-=======
+
 }		
 p {
   font-family: Helvetica, "Times New Roman", Verdana, sans-serif;
 }	
->>>>>>> Stashed changes
+
 a {
     color: #006633;
 }
