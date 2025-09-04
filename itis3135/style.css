@@ -1,0 +1,39 @@
+body {
+    background-color: #FFFFFF;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+#page-wrapper {
+    height: 100%;
+    width: 100%;
+    max-width: 950px;
+    margin: auto;
+}
+#logo-wrapper {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-bottom: 1px solid #006633;
+}
+#content-wrapper {
+    width: 100%;
+    max-width: 950px;
+    margin: auto;
+    text-align: center;
+<<<<<<< Updated upstream
+}	
+p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: large;
+}
+
+=======
+}		
+p {
+  font-family: Helvetica, "Times New Roman", Verdana, sans-serif;
+}	
+>>>>>>> Stashed changes
+a {
+    color: #006633;
+}
