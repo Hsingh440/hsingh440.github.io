@@ -14,7 +14,7 @@ body {
     padding-top: 20px;
     padding-bottom: 10px;
     text-align: center;
-    border-bottom: 1px solid #006633;
+    /* border-bottom: 1px solid #006633; */
 }
 #content-wrapper {
     width: 100%;
@@ -22,18 +22,24 @@ body {
     margin: auto;
     text-align: center;
 
-}	
+}   
 p {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: large;
 }
-
-
-		
+h1{
+    text-align: "center"
+}
+h2{
+    text-align: "center"
+}
+        
 p {
   font-family: Helvetica, "Times New Roman", Verdana, sans-serif;
-}	
-
+}   
+footer{
+    text-align: "center"
+}
 a {
     color: #006633;
 }
