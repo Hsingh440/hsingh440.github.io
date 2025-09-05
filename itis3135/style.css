@@ -23,23 +23,24 @@ body {
     text-align: center;
 
 }   
+#links{
+    text-align: center;
+}
 p {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: large;
 }
 h1{
-    text-align: "center"
+    text-align: center;
 }
 h2{
-    text-align: "center"
+    text-align: center;
 }
         
 p {
   font-family: Helvetica, "Times New Roman", Verdana, sans-serif;
 }   
-footer{
-    text-align: "center"
-}
+
 a {
     color: #006633;
 }
