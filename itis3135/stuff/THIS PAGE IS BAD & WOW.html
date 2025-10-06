@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!-- EXTRA BLANK LINE ABOVE ON PURPOSE -->
+
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>THIS IS A REALLY BAD PAGE TITLE WITH SPACES & SYMBOLS</title>
+
+  <!-- absolute link to a stylesheet (but we won’t use it usefully) -->
+  <link rel="stylesheet" href="https://example.com/default.css">
+
+  <style>
+    /* barely anything here on purpose; we’ll do inline styles a lot */
+    body { background:white; color:black; margin: 7px 40px 3px 22px; }
+    nav { margin: 0 100px 3px 7px; }
+  </style>
+</head>
+<body>
+
+  <!-- separate nav so it “doesn’t match” your normal site nav -->
+  <nav style="font-family: 'Comic Sans MS', cursive, sans-serif; text-align:center;">
+    <p style="margin: 20px 2px 60px 3px;">
+      <u>Welcome to the Unhelpful Navigation</u> |
+      <a href="https://www.google.com">Totally Absolute Link 1</a> |
+      <a href="https://www.example.com/folder/page">Totally Absolute Link 2</a>
+    </p>
+  </nav>
+
+  <!-- headers out of order: h2 BEFORE h1 -->
+  <h2 style="font-family: Papyrus, fantasy; text-align:center; background: #ff0;">
+    The Best Caption That Isn't A Caption And Means Nothing
+  </h2>
+  <h1 style="font-family: 'Times New Roman', Times, serif; margin-left: 73px;">
+    wow This Is The Real Heading, But It Comes Second
+  </h1>
+
+  <!-- giant border with each side styled differently -->
+  <div style="
+    margin: 14px 50px 5px 120px;
+    padding: 18px;
+    border-top: 15px dotted red;
+    border-right: 25px double green;
+    border-bottom: 10px dashed blue;
+    border-left: 20px groove purple;">
+    <p style="font-size: 42px; text-align: center;">
+      THIS PARAGRAPH IS NEEDLESSLY HUGE AND CENTERED FOR NO REASON
+    </p>
+  </div>
+
+  <!-- bad image usage -->
+  <!-- big image from the web, absolute URL, no extension, distorted to 400x400 -->
+  <figure style="text-align:center; margin: 60px 3px 10px 1px;">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Fronalpstock_big"
+      alt="Ridiculously Large Picture With No Extension"
+      width="400" height="400"
+      style="border: 5px solid #000; display:block; margin: 0 auto 8px auto;">
+    <!-- meaningless “caption” but as a heading (wrong) -->
+    <h6 style="font-family: Papyrus, fantasy; margin:0;">
+      CAPTION THAT SAYS NOTHING ABOUT ANYTHING WHATSOEVER
+    </h6>
+    <!-- absurd file “name” shown to user -->
+    <p style="font-family: 'Comic Sans MS', cursive, sans-serif;">
+      This-Image-Has-A-Long-Nonsense-Name With  Spaces   And & Symbols (definitely_not_in_images_folder)
+    </p>
+  </figure>
+
+  <!-- centered bullet list, bad margins, underline non-links, default link colors untouched -->
+  <ul style="text-align:center; list-style-position: inside; margin: 34px 4px 99px 2px;">
+    <li><u>This is underlined text that is not a link</u></li>
+    <li style="background:#ffff99;">Some text with a random background color on it</li>
+    <li>Absolute link again (leave default colors): <a href="https://example.com/whatever">example</a></li>
+  </ul>
+
+  <!-- repeated inline styles (instead of using the linked CSS) -->
+  <p style="font-family: Papyrus, fantasy; margin: 1px 90px 1px 7px;">
+    This paragraph uses Papyrus in one place.
+  </p>
+  <p style="font-family: 'Comic Sans MS', cursive, sans-serif; margin: 40px 3px 0 77px;">
+    This paragraph uses Comic Sans in another place.
+  </p>
+  <p style="font-family: 'Times New Roman', Times, serif; margin: 3px 200px 2px 11px;">
+    This paragraph uses Times in a third place.
+  </p>
+
+  <!-- extra blank lines for no reason -->
+
+
+
+
+
+
+
+  <!-- and some more at the end -->
+
+</body>
+</html>
