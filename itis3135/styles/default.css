@@ -1,7 +1,7 @@
 body{
-    background-color:goldenrod;
+    background-color:rgb(87, 97, 157);
     text-align: center;
-    color:brown;
+    color:rgb(173, 177, 181);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -22,7 +22,7 @@ h2{
     text-align: center;
 }
 img{
-    width:50%;
+    width: 30%;
 }
 figure{
     text-align: center;
