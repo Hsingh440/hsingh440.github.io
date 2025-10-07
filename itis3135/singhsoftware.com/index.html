@@ -1,36 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Singh Software!</title>
-    <style>
-            body{
-                background-color: beige;
-                color: blue;
-            }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Singh Software </title>
+  <!-- Coolors palette used: https://coolors.co/0b132b-3a506b-5bc0be-f7f7f7-111111 -->
+  <style>
+    :root{
+      --bg: #f7f7f7;
+      --ink: #111111;
+      --accent: #0b132b;
+      --accent-2: #3a506b;
+      --accent-3: #5bc0be;
+      --card: #ffffff;
+      --line: #cccccc;
+    }
 
+    *{ box-sizing: border-box; }
+    body{
+      margin: 0;
+      font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+    }
+
+    /* Layout */
+    header, main, footer{
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1rem 1rem;
+    }
+
+    /* Header — centered */
+    header{
+      border-bottom: 2px solid var(--accent);
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      text-align: center; /* <— center header content */
+    }
+    h1{
+      margin: 0 0 .25rem 0;
+      font-size: 2rem;
+      color: var(--accent);
+    }
+    .tagline{
+      margin: 0;
+      font-size: 1rem;
+      color: var(--accent-3);
+      font-weight: 600;
+    }
+
+    /* Main */
+    main{
+      padding-top: .75rem;
+      padding-bottom: 1rem; /* <— less space above footer */
+    }
+    h2{
+      margin: .4rem 0 .6rem;
+      font-size: 1.3rem;
+      color: var(--accent-2);
+      text-align: center; /* <— center the section title */
+    }
+    p{ margin: .5rem 0; }
+
+    /* Non-standard bullets (squares) */
+    ul{
+      list-style-type: square;
+      padding-left: 1.2rem;
+      margin: .35rem 0 .9rem;
+    }
+    li{ margin: .25rem 0; }
+
+    /* Contact block — compact & centered width */
+    address{
+      margin: .75rem auto .5rem; /* <— reduced top/bottom space */
+      padding: .45rem .75rem;
+      border: 1px solid var(--line);
+      background: var(--card);
+      white-space: pre-line;
+      font-style: normal;
+      max-width: 560px; /* <— keeps it neat */
+    }
+    address a{
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    /* Footer — centered */
+    footer{
+      border-top: 2px solid var(--accent);
+      margin-top: .75rem;   /* <— tighter */
+      padding-top: .9rem;
+      padding-bottom: 1.4rem;
+      font-size: .95rem;
+      text-align: center;   /* <— center all footer content */
+    }
+    .foot-links{
+      display: inline-flex;
+      flex-wrap: wrap;
+      gap: .90rem;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: .35rem;
+    }
+    .foot-links a{
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .copy{
+      margin: .25rem 0 0;
+      color: #444;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Singh Software!</h1>
-        <nav>
-            <a href="./">Home</a>
-            ||
-            <a href="introduction.html">Introduction</a>
-            ||
-            <a href="contract.html">Contract</a>
-        </nav>
-    </header>
-    <main>
-        <h2>Singh Software Solutions</h2>
-        <p>At Singh Software, we are dedicated to providing top-notch software solutions tailored to meet your unique needs. Whether you're a small business looking to streamline operations or an individual seeking custom applications, we've got you covered.</p>
-        <p>Our team of experienced developers and designers work closely with clients to ensure that every project is delivered on time, within budget, and exceeds expectations. From web development to mobile apps, we offer a wide range of services to help you succeed in the digital world.</p>
-        <p>Explore our website to learn more about our services, view our portfolio, and get in touch with us. Let's build something great together!</p>        
-    </main>
-    <footer>
-        <nav>
+  <header>
+    <h1>Singh Software</h1>
+    <p class="tagline">Clean code. Clear results.</p>
+  </header>
+
+  <main>
+    <h2>Singh Software — Services</h2>
+
+    <p>
+      I build straightforward, modern websites for small businesses and students:
+      clean HTML, responsive layouts, and simple content you can maintain yourself.
+    </p>
+
+    <p>
+      My process is plain and honest—short check-ins, clear milestones, and no buzzwords.
+      You tell me what you want the site to do; I'll keep it fast, accessible, and easy to update.
+    </p>
+
+    <ul>
+      <li>Custom pages that validate cleanly (HTML/CSS)</li>
+      <li>Mobile-friendly layouts that just work</li>
+      <li>Basic SEO structure and meta tags</li>
+      <li>Performance and accessibility in mind</li>
+      <li>Simple docs so hand-off is painless</li>
+    </ul>
+
+    <p>
+      If you're ready, send a short note with your goal, any examples you like, and a rough deadline.
+      I'll reply with a simple plan and a straightforward price.
+    </p>
+
+    <address>
+      Singh Software
+      Email: <a href="mailto:hello@singhsoftware.hotmail">hello@singhsoftware.hotmail</a>
+      Phone no.: (123) 456-7890
+      Address: 123 Innovation Way, Charlotte, NC 28223
+    </address>
+  </main>
+
+  <footer>
+
+    <nav>
                 <a href="https://www.linkedin.com/in/harry11d/">LinkedIn</a> 
                 ||
                 <a href="https://github.com/Hsingh440/">GitHub</a> <!-- Should take to github profile -->
@@ -45,7 +172,16 @@
                 ||
                 <a href="https://www.codecademy.com/profiles/hsingh19">Codecademy</a>
         </nav>
-    <p> Page Built by a <a href="singhsoftware.com/">Singh Software Enterprises</a> &copy;2025</p>
-    </footer>   
+    
+
+    <div class="foot-links" aria-label="validation">
+      <!-- Keep only what you need for this standalone firm page -->
+      <a href="https://validator.w3.org/nu/" target="_blank" rel="noopener">Validate HTML</a>
+      <a href="https://jigsaw.w3.org/css-validator/" target="_blank" rel="noopener">Validate CSS</a>
+      <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener">WCAG Contrast</a>
+    </div>
+   <p> Page Built by a <a href="singhsoftware.com/">Singh Software Enterprises</a> &copy;2025</p>
+    
+  </footer>
 </body>
 </html>
