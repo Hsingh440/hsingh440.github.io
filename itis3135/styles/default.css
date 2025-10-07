@@ -9,10 +9,15 @@ body{
     color:darkorchid
     text-decoration none;
 }
+    a:visited{
+    color:darkorchid;
+}
+
 
 a:hover {
     color:darkmagenta;
 }
+
 main{
     text-align:left;
     margin-left: 20%;
