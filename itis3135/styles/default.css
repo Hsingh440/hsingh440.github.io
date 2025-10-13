@@ -8,16 +8,16 @@ html {
   line-height: 1.5;
 }
 
-/* Page Basics */
+
 body {
-  background-color: rgb(87, 97, 157);
+  background-color: rgb(9, 17, 61);
   color: rgb(173, 177, 181);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin: 0;
-  text-align: center; /* center headings by default; content in main will be left aligned */
+  text-align: center; 
 }
 
-/* Links (LVHFA order) */
+
 a:link {
   color: darkorchid;
   text-decoration: none;
@@ -30,34 +30,34 @@ a:focus {
   color: darkmagenta;
   text-decoration: underline;
 }
-a:active {
+a:active { 
   opacity: 0.9;
 }
 
-/* Main container — assignment requirements */
+
 main {
-  /* Percentage width for flexibility */
+  
   width: 90%;
-  /* Center the page */
+ 
   margin: 0 auto;
-  /* Prevent over-wide lines on big screens */
+ 
   max-width: 1200px;
-  /* Content alignment */
+  
   text-align: left;
-  /* Optional: breathing room */
+  
 
   background: #fff;
   color: #222;
   border-radius: 12px;
 }
 
-/* Headings */
+
 h2 {
   text-align: center;
   margin-top: 0.5rem;
 }
 
-/* Media / Figures */
+
 img,
 video {
   display: block;
@@ -72,7 +72,7 @@ figure {
   margin: 1rem auto;
 }
 
-/* Example demo box (delete if unused) */
+
 #colorbox {
   height: 200px;
   width: 200px;
@@ -81,25 +81,25 @@ figure {
 }
 
 
-/* Laptops / Small Desktops: 981px–1400px */
+
 @media screen and (min-width: 981px) and (max-width: 1400px) {
-  #colorbox { background-color: yellow; } /* example */
+  #colorbox { background-color: #ACC8E5; } 
   main { width: 92%; }
 }
 
-/* Tablets: 601px–980px */
+
 @media screen and (min-width: 601px) and (max-width: 980px) {
-  #colorbox { background-color: orange; } /* example */
+  #colorbox { background-color: D1CAA1; } 
   main { width: 94%; }
 }
 
-/* Mobile: 370px–600px */
+
 @media screen and (min-width: 370px) and (max-width: 600px) {
-  #colorbox { background-color: red; } /* example */
+  #colorbox { background-color: #112A46; } 
   main { width: 95%; }
 }
 
-/* Ultra-small phones (optional, <370px) */
+
 @media screen and (max-width: 369px) {
   main { width: 96%; padding: 0.75rem; }
 }
