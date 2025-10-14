@@ -36,16 +36,9 @@ a:active {
 
 
 main {
-  
-  width: 90%;
- 
   margin: 0 auto;
- 
   max-width: 800;
-  
   text-align: left;
-  
-
   background: #fff;
   color: #222;
   border-radius: 12px;
