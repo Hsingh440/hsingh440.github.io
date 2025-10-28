@@ -1,0 +1,66 @@
+html {
+    font-family: cursive;
+}
+
+body {
+    background-color: rgb(16, 36, 43);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('itis3135/images/The_Court_of_Lahore.jpg');
+    background-size: cover; 
+    background-position: center;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 50px 5%;
+}
+
+a {
+    transition: 0.5s;
+}
+
+a:hover {
+    color: #2276a0;
+    font-weight: bolder;
+}
+
+header p {
+    margin-top: 5px;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 60px;
+    line-height: 1.5;
+    margin-top: 30px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+span {
+    color: #aeff00;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+footer {
+    font-family: 'Courier New', Courier, monospace  ;
+    background:  rgb(16, 36, 43);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}

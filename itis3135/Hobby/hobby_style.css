@@ -1,0 +1,175 @@
+:root {
+    --primary: #0d1b2a;
+    --secondary: #f4a460;
+    --accent: #4682b4;
+    --background: #0d1b2a;
+    --text: #222;
+    --divider: "⚽";
+    --nav-bg: #e0e0e0;
+    --nav-active: #4682b4;
+    --nav-hover: #f4a460;
+    --footer-bg: #e0e0e0;
+    --footer-text: #ff9999;
+    --font-main: 'Segoe UI', 'Arial', sans-serif;
+}
+body {
+    background: var(--background);
+    color: var(--text);
+    font-family: var(--font-main);
+    margin: 0;
+    min-height: 100vh;
+}
+header {
+    background: var(--primary);
+    color: #fff;
+    padding: 1.5rem 0 1rem 0;
+    text-align: center;
+    letter-spacing: 1px;
+}
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+nav {
+    margin: 20px;
+    background: var(--nav-bg);
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+}
+nav a {
+    color: var(--accent);
+    text-decoration: none;
+    padding: 0.3em 0.8em;
+    border-radius: 8px;
+    transition: background 0.2s, color 0.2s;
+    font-weight: 500;
+}
+nav a.active, nav a:focus {
+    background: var(--nav-active);
+    color: #fff;
+}
+nav a:hover {
+    background: var(--nav-hover);
+    color: var(--primary);
+}
+.divider {
+    font-size: 1.3em;
+    margin: 0 0.5em;
+    color: var(--secondary);
+}
+main {
+    max-width: 900px;
+    margin: 2rem auto 2rem auto;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(46,139,87,0.08);
+}
+section {
+    display: none;
+    animation: fadeIn 0.5s;
+}
+section.active {
+    display: block;
+}
+h2 {
+    color: var(--primary);
+    border-bottom: 2px solid var(--secondary);
+    padding-bottom: 0.3em;
+    margin-top: 0;
+    margin-bottom: 1em;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+figure {
+    margin: 1.5em 0;
+    text-align: center;
+}
+figure img {
+    max-width: 320px;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(70,130,180,0.12);
+}
+figcaption {
+    font-style: italic;
+    color: var(--accent);
+    margin-top: 0.5em;
+}
+.ai-prompt {
+    font-style: italic;
+    color: var(--secondary);
+    margin-top: 0.3em;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+}
+th, td {
+    border: 1px solid var(--accent);
+    padding: 0.7em;
+    text-align: left;
+}
+th {
+    background: var(--secondary);
+    color: #fff;
+}
+tr:nth-child(even) {
+    background: #f5e9da;
+}
+.why-list {
+    list-style: disc inside;
+    margin: 1em 0 1em 1em;
+}
+footer {
+    background: var(--footer-bg);
+    color: var(--footer-text);
+    text-align: center;
+    padding: 1.2em 0 1em 0;
+    margin-top: 2em;
+    border-radius: 0 0 16px 16px;
+}
+.validation-buttons {
+    margin: 0.5em 10;
+}
+.validation-buttons a {
+    display: inline-block;
+    margin: 0 0.4em;
+    padding: 0.3em 0.7em;
+    background: var(--secondary);
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background 0.2s;
+}
+.validation-buttons a:hover {
+    background: var(--accent);
+}
+.design-firm {
+    display: block;
+    margin-top: 0.7em;
+    color: #fff;
+    text-decoration: underline;
+    font-weight: 500;
+}
+@media (max-width: 600px) {
+    main {
+        padding: 0.5em;
+    }
+    nav {
+        flex-wrap: wrap;
+        gap: 0.7rem;
+        font-size: 1em;
+    }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Soccer Hobby Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <style>
+        :root {
+            --primary: #0d1b2a;
+            --secondary: #f4a460;
+            --accent: #4682b4;
+            --background: #0d1b2a;
+            --text: #222;
+            --divider: "⚽";
+            --nav-bg: #e0e0e0;
+            --nav-active: #4682b4;
+            --nav-hover: #f4a460;
+            --footer-bg: #e0e0e0;
+            --footer-text: #ff9999;
+            --font-main: 'Segoe UI', 'Arial', sans-serif;
+        }
+        body {
+            background: var(--background);
+            color: var(--text);
+            font-family: var(--font-main);
+            margin: 0;
+            min-height: 100vh;
+        }
+        header {
+            background: var(--primary);
+            color: #fff;
+            padding: 1.5rem 0 1rem 0;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        nav {
+            margin: 20px;
+            background: var(--nav-bg);
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            padding: 0.5rem 0;
+            font-size: 1.1rem;
+        }
+        nav a {
+            color: var(--accent);
+            text-decoration: none;
+            padding: 0.3em 0.8em;
+            border-radius: 8px;
+            transition: background 0.2s, color 0.2s;
+            font-weight: 500;
+        }
+        nav a.active, nav a:focus {
+            background: var(--nav-active);
+            color: #fff;
+        }
+        nav a:hover {
+            background: var(--nav-hover);
+            color: var(--primary);
+        }
+        .divider {
+            font-size: 1.3em;
+            margin: 0 0.5em;
+            color: var(--secondary);
+        }
+        main {
+            max-width: 900px;
+            margin: 2rem auto 2rem auto;
+            padding: 1rem;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 2px 12px rgba(46,139,87,0.08);
+        }
+        section {
+            display: none;
+            animation: fadeIn 0.5s;
+        }
+        section.active {
+            display: block;
+        }
+        h2 {
+            color: var(--primary);
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 0.3em;
+            margin-top: 0;
+            margin-bottom: 1em;
+            font-size: 2rem;
+            letter-spacing: 1px;
+        }
+        figure {
+            margin: 1.5em 0;
+            text-align: center;
+        }
+        figure img {
+            max-width: 320px;
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(70,130,180,0.12);
+        }
+        figcaption {
+            font-style: italic;
+            color: var(--accent);
+            margin-top: 0.5em;
+        }
+        .ai-prompt {
+            font-style: italic;
+            color: var(--secondary);
+            margin-top: 0.3em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1em 0;
+        }
+        th, td {
+            border: 1px solid var(--accent);
+            padding: 0.7em;
+            text-align: left;
+        }
+        th {
+            background: var(--secondary);
+            color: #fff;
+        }
+        tr:nth-child(even) {
+            background: #f5e9da;
+        }
+        .why-list {
+            list-style: disc inside;
+            margin: 1em 0 1em 1em;
+        }
+        footer {
+            background: var(--footer-bg);
+            color: var(--footer-text);
+            text-align: center;
+            padding: 1.2em 0 1em 0;
+            margin-top: 2em;
+            border-radius: 0 0 16px 16px;
+        }
+        .validation-buttons {
+            margin: 0.5em 10;
+        }
+        .validation-buttons a {
+            display: inline-block;
+            margin: 0 0.4em;
+            padding: 0.3em 0.7em;
+            background: var(--secondary);
+            color: #fff;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 1em;
+            transition: background 0.2s;
+        }
+        .validation-buttons a:hover {
+            background: var(--accent);
+        }
+        .design-firm {
+            display: block;
+            margin-top: 0.7em;
+            color: #fff;
+            text-decoration: underline;
+            font-weight: 500;
+        }
+        @media (max-width: 600px) {
+            main {
+                padding: 0.5em;
+            }
+            nav {
+                flex-wrap: wrap;
+                gap: 0.7rem;
+                font-size: 1em;
+            }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const navLinks = document.querySelectorAll('nav a');
+            const sections = document.querySelectorAll('main section');
+            function showSection(id) {
+                sections.forEach((sec) => {
+                    sec.classList.remove('active');
+                    if (sec.id === id) sec.classList.add('active');
+                });
+                navLinks.forEach((link) => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === '#' + id) link.classList.add('active');
+                });
+            }
+            navLinks.forEach((link) => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    showSection(this.getAttribute('href').substring(1));
+                });
+            });
+            showSection('what'); // Default section
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Harsimran plays Soccer</h1>
+        <nav aria-label="Main navigation">
+            <a href="#what" class="active" aria-current="page">What</a>
+            <span class="divider">⚽</span>
+            <a href="#who">Who</a>
+            <span class="divider">⚽</span>
+            <a href="#when">When</a>
+            <span class="divider">⚽</span>
+            <a href="#where">Where</a>
+            <span class="divider">⚽</span>
+            <a href="#how">How</a>
+            <span class="divider">⚽</span>
+            <a href="#why">Why</a>
+            <span class="divider">⚽</span>
+            <a href="#ai-prompts">AI Prompts</a>
+        </nav>
+    </header>
+    <main>
+        <section id="what" class="active" aria-labelledby="what-heading">
+            <h2 id="what-heading">What is Soccer?</h2>
+            <p>Soccer, also known as football in many countries, is a dynamic team sport played by millions worldwide. It involves two teams competing to score goals by getting a ball into the opposing team's net using any part of the body except the hands and arms.</p>
+            <figure>
+                <img src="images/ai_soccer_field.png" alt="AI-generated soccer field illustration" width="320" height="180">
+                <figcaption>Soccer field overview</figcaption>
+                </figure>
+            <ul>
+                <li>Played on a rectangular field with goals at each end.</li>
+                <li>Each team has 11 players including a goalkeeper.</li>
+                <li>Matches typically last 90 minutes, split into two halves.</li>
+            </ul>
+        </section>
+        <section id="who" aria-labelledby="who-heading">
+            <h2 id="who-heading">Who Plays Soccer?</h2>
+            <p>Soccer is enjoyed by people of all ages and backgrounds. From local youth leagues to professional teams, the sport brings communities together.</p>
+            <figure>
+                <img src="images/ai_soccer_team.png" alt="AI-generated soccer team group photo" width="320" height="180">
+                <figcaption>Local soccer team</figcaption>
+            </figure>
+            <ul>
+                <li>Children and adults participate in organized leagues.</li>
+                <li>Soccer clubs foster teamwork and sportsmanship.</li>
+                <li>Fans support their favorite teams worldwide.</li>
+            </ul>
+        </section>
+        <section id="when" aria-labelledby="when-heading">
+            <h2 id="when-heading">When to Play Soccer?</h2>
+            <p>Soccer can be played year-round, but certain seasons and times are more popular depending on location and league.</p>
+            <figure>
+                <img src="images/ai_soccer_seasons.png" alt="AI-generated soccer match in different seasons" width="320" height="180">
+                <figcaption>Soccer through the seasons</figcaption>
+            </figure>
+            <table>
+                <caption>Popular Soccer Seasons</caption>
+                <thead>
+                    <tr>
+                        <th>Region</th>
+                        <th>Season</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>USA</td>
+                        <td>Spring & Fall</td>
+                        <td>Youth leagues peak in these months</td>
+                    </tr>
+                    <tr>
+                        <td>Europe</td>
+                        <td>Fall to Spring</td>
+                        <td>Professional leagues run August-May</td>
+                    </tr>
+                    <tr>
+                        <td>Global</td>
+                        <td>Year-round</td>
+                        <td>Casual play anytime</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="where" aria-labelledby="where-heading">
+            <h2 id="where-heading">Where to Play Soccer?</h2>
+            <p>Soccer is played in a variety of locations, from professional stadiums to local parks and school fields.</p>
+            <figure>
+                <img src="images/ai_soccer_locations.png" alt="AI-generated soccer locations collage" width="320" height="180">
+                <figcaption>Popular soccer venues</figcaption>
+            </figure>
+            <ul>
+                <li>Community parks and recreation centers</li>
+                <li>School and university fields</li>
+                <li>Professional stadiums for major matches</li>
+            </ul>
+        </section>
+        <section id="how" aria-labelledby="how-heading">
+            <h2 id="how-heading">How to Get Started?</h2>
+            <p>Getting started with soccer is easy and fun. All you need is a ball, some friends, and a place to play!</p>
+            <figure>
+                <img src="images/ai_soccer_gear.png" alt="AI-generated soccer gear illustration" width="320" height="180">
+                <figcaption>Basic soccer gear</figcaption>
+            </figure>
+            <ul>
+            <li>Two teams try to score by kicking the ball into the opponent’s goal.</li>
+            <li>Players move the ball with their feet, legs, or head—no hands (except the goalkeeper).</li>
+            <li>The match starts with a kickoff at midfield.</li>
+            <li>Advance the ball using dribbling, passing, and teamwork.</li>
+            <li>The team with the most goals when time expires wins.</li>
+            </ul>
+        </section>
+        <section id="why" aria-labelledby="why-heading">
+            <h2 id="why-heading">Why Play Soccer?</h2>
+            <p>Soccer offers many benefits, both physical and social. Here are some reasons to play:</p>
+            <figure>
+                <img src="images/ai_soccer_fun.png" alt="AI-generated image of people enjoying soccer" width="320" height="180">
+                <figcaption>Enjoying soccer together</figcaption>
+            </figure>
+            <ul class="why-list">
+                <li>Improves fitness and coordination</li>
+                <li>Builds teamwork and friendships</li>
+                <li>Encourages healthy competition</li>
+            </ul>
+        </section>
+        <section id="ai-prompts" aria-labelledby="ai-prompts-heading">
+            <h2 id="ai-prompts-heading">AI Prompts Used</h2>
+            <p>All images on this site were generated using AI. Below are the prompts used for each:</p>
+            <ul>
+                <li><strong>Soccer field overview:</strong> "Generate a photorealistic image of a soccer field from above, sunny day."</li>
+                <li><strong>Local soccer team:</strong> "Create a cartoon-style image of a diverse soccer team posing for a group photo."</li>
+                <li><strong>Soccer through the seasons:</strong> "Show a soccer match in spring, summer, and fall, cartoon style."</li>
+                <li><strong>Popular soccer venues:</strong> "Collage of cartoon soccer stadium, park, and school field."</li>
+                <li><strong>Basic soccer gear:</strong> "Draw a cartoon soccer ball, cleats, and shin guards on grass."</li>
+                <li><strong>Enjoying soccer together:</strong> "Cartoon group of friends laughing and playing soccer outdoors."</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div class="validation-buttons">
+            <a href="https://webpages.charlotte.edu/hsingh19/itis3135/">ITIS 3135</a>
+        </div>
+    </footer>
+</body>
+</html>
