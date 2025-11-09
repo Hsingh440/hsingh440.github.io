@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsimran Singh's Herioic Stalion || ITIS3135 || Introduction </title>
+    <link rel="stylesheet" href="styles/default.css">
+
+      <script src="scripts/introduction.js" defer></script>
+      <script src="scripts/generate_json.js" defer></script>
+      <script src="scripts/generate_html.js" defer></script>
+</head>
+<body>
+   <header>
+    <div data-include="components/header.html"></div>
+  </header>
+<main>
+    <h2>Introduction Form</h2>
+    
+    <div id="form-container">
+        <h3>Please submit the form below.</h3>
+
+        <form id="introForm">
+            <fieldset>
+                <legend>Name (Used for Title)</legend>
+                <div class="form-group">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" value="Harsimran" placeholder="e.g., Harsimran" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" value="Singh" placeholder="e.g., Singh" required>
+                </div>
+            </fieldset>
+
+             <fieldset>
+                <legend>Image and Caption</legend>
+                <div class="form-group">
+                    <label for="picture">Add your image:</label>
+                    <input type="file" id="picture" name="picture" accept="image/*" required>
+                </div>
+                <div class="form-group">
+                    <label for="caption">Picture Caption:</label>
+                    <input type="text" id="caption" name="caption" value="Graduation Day" placeholder="A caption for your image" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+  <legend>Content Sections</legend>
+
+  <div class="form-group">
+    <label for="aboutMe">About Me:</label>
+    <textarea id="aboutMe" name="aboutMe" rows="4" placeholder="Write your 'About Me' section..." required>
+I'm a motivated student with a passion for technology, learning, and helping others. My academic and career goals are clearly defined, and I'm working steadily toward achieving them.
+    </textarea>
+  </div>
+
+  <div class="form-group">
+    <label for="personalBg">Personal Background:</label>
+    <textarea id="personalBg" name="personalBg" rows="3" placeholder="Write your 'Personal Background'..." required>
+I am a motivated student with a knack for technology and a drive to keep learning. I enjoy connecting with people, solving problems, and working toward clear academic and career goals.
+    </textarea>
+  </div>
+
+  <div class="form-group">
+    <label for="professionalBg">Professional Background:</label>
+    <textarea id="professionalBg" name="professionalBg" rows="3" placeholder="Write your 'Professional Background'..." required>
+I have worked in roles where connecting with people and solving problems were key highlights. I enjoy bringing that real-world experience into my studies, helping me bridge technical and interpersonal skills.
+    </textarea>
+  </div>
+
+  <div class="form-group">
+    <label for="academicBg">Academic Background:</label>
+    <textarea id="academicBg" name="academicBg" rows="3" placeholder="Write your 'Academic Background'..." required>
+My academic journey has focused on technology and people-oriented skills, giving me a balanced perspective in my studies. I’ve also had some exposure to this subject through past coursework and personal projects, and I’m excited to strengthen that foundation further.
+    </textarea>
+  </div>
+
+  <div class="form-group">
+    <label for="primaryComputer">Primary Computer:</label>
+    <textarea id="primaryComputer" name="primaryComputer" rows="2" placeholder="Tell us about your computer..." required>
+My primary computer is a MacBook Pro, which I use for school, coding, and exploring new tools and technologies.
+    </textarea>
+  </div>
+</fieldset>
+
+<fieldset>
+  <legend>Courses</legend>
+  <p>Note: The section title will be "Courses I'm Taking, & Why"</p>
+
+  <div id="courses-container">
+    <div class="course-entry">
+      <input type="text" name="courseDept" value="ITIS" placeholder="Dept" required>
+      <input type="text" name="courseNum" value="3135" placeholder="Num" required>
+      <input type="text" name="courseName" value="Front end Web Development" placeholder="Name" required>
+      <input type="text" name="courseReason" value="I want to strengthen my web development skills and build projects that can be showcased in my portfolio." placeholder="Reason" required>
+      <button type="button" class="delete-course">Remove</button>
+    </div>
+
+    <div class="course-entry">
+      <input type="text" name="courseDept" value="ITSC" placeholder="Dept" required>
+      <input type="text" name="courseNum" value="2600" placeholder="Num" required>
+      <input type="text" name="courseName" value="Professional Development II" placeholder="Name" required>
+      <input type="text" name="courseReason" value="This course helps me align my academic work with my long-term professional goals in computing." placeholder="Reason" required>
+      <button type="button" class="delete-course">Remove</button>
+    </div>
+
+    <div class="course-entry">
+      <input type="text" name="courseDept" value="MATH" placeholder="Dept" required>
+      <input type="text" name="courseNum" value="1242" placeholder="Num" required>
+      <input type="text" name="courseName" value="Calculus II" placeholder="Name" required>
+      <input type="text" name="courseReason" value="I'm working to deepen my mathematical foundation, which is essential for problem-solving in computer science and beyond." placeholder="Reason" required>
+      <button type="button" class="delete-course">Remove</button>
+    </div>
+
+    <div class="course-entry">
+      <input type="text" name="courseDept" value="ITSC" placeholder="Dept" required>
+      <input type="text" name="courseNum" value="2181" placeholder="Num" required>
+      <input type="text" name="courseName" value="Introduction to computer Systems" placeholder="Name" required>
+      <input type="text" name="courseReason" value="I'm taking this course to build a stronger understanding of how computer systems work at the hardware and software levels." placeholder="Reason" required>
+      <button type="button" class="delete-course">Remove</button>
+    </div>
+
+    <div class="course-entry">
+      <input type="text" name="courseDept" value="STAT" placeholder="Dept" required>
+      <input type="text" name="courseNum" value="1222" placeholder="Num" required>
+      <input type="text" name="courseName" value="Statistics" placeholder="Name" required>
+      <input type="text" name="courseReason" value="I want to strengthen my analytical skills, since statistics is valuable for problem-solving and data-driven decision-making in technology." placeholder="Reason" required>
+      <button type="button" class="delete-course">Remove</button>
+    </div>
+
+    <div class="course-entry">
+      <input type="text" name="courseDept" value="ITCS" placeholder="Dept" required>
+      <input type="text" name="courseNum" value="3166" placeholder="Num" required>
+      <input type="text" name="courseName" value="Introduction to Computer Networks" placeholder="Name" required>
+      <input type="text" name="courseReason" value="I'm taking this course to gain practical knowledge of networking concepts that will be important for future roles in IT and security." placeholder="Reason" required>
+      <button type="button" class="delete-course">Remove</button>
+    </div>
+  </div>
+
+  <button type="button" id="add-course">Add Course</button>
+</fieldset>
+
+<div class="form-controls">
+  <button type="submit">Submit</button>
+  <button type="reset">Reset</button>
+  <button type="button" id="clear-btn">Clear</button>
+  <button type="button" id="generate-json-btn">Generate JSON</button>
+  <button type="button" id="generate-html-btn">Generate HTML</button>
+</div>
+</form>
+</div>
+<div id="output-container" style="display: none;"></div>
+</main>
+
+ <footer>
+    <div data-include="components/footer.html"></div>
+  </footer>
+  <script src="scripts/HTMLInclude.js"></script>
+  <script src="https://lint.page/kit/67ff88.js" crossorigin="anonymous"></script>
+</body>
+</html>

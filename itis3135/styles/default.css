@@ -175,3 +175,33 @@ footer{
   color:#2d3b4a;
   font-size:.95rem;
 }
+
+pre{
+  background: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+code{
+  font-family: 'Courier New', Courier, monospace;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  vertical-align: top;
+  word-break: break-word;
+}

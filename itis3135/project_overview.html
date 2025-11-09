@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/default.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsimran Singh's Heroic Stallion || ITIS3135 || Home</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+    <body>
+    <div data-include="components/header.html"></div>
+<main>
+  <h2>Project Overview: "Akaal Farms"</h2>
+ 
+  <!-- 1) Project Overview -->
+  <section aria-labelledby="proj-overview-h3">
+    <h3 id="proj-overview-h3">1) Project Overview</h3>
+    <p><strong>Working Title:</strong> Akaal Farms — Crops, Livestock &amp; Ranch Showcase</p>
+    <p>
+      <strong>Description &amp; Purpose:</strong>
+      A public-facing website for a local farmer, Sahibdeep Singh, to showcase his agricultural work — including wheat, rice, and corn production — as well as his ranch animals (cows, hens, and other domestic animals). The site improves his visibility in the community, gives buyers and neighbors a single place to see what he grows, and provides a simple way to contact him for visits, small orders, or collaboration. Because this course only allows read-only interactions, the site will simulate “orders/requests” with forms and client-side validation, not with a full database.
+    </p>
+    <div class="grid-2">
+      <div>
+        <h4>Intended Users</h4>
+        <ul class="tight">
+          <li>Local buyers (grocery shops, restaurants, neighbors)</li>
+          <li>Community members interested in fresh produce</li>
+          <li>Friends/family who want to see his ranch and animals</li>
+          <li>Potential partners (feed suppliers, transport, ag extension)</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Content Overview</h4>
+        <ul class="tight">
+          <li>About the farmer &amp; the ranch</li>
+          <li>Crops grown (wheat, rice, corn, seasonal items)</li>
+          <li>Livestock &amp; domestic animals (cows, hens, other)</li>
+          <li>Photo gallery of fields, harvest, animals</li>
+          <li>Visit / Contact / “Request produce” form</li>
+          <li>Location &amp; farm hours (if public)</li>
+        </ul>
+      </div>
+    </div>
+    <p class="todo"><strong>Note:</strong> Client can later provide real photos and exact crop list — for now we use placeholders.</p>
+  </section>
+
+  <!-- 2) Client Information -->
+  <section aria-labelledby="client-info-h3">
+    <h3 id="client-info-h3">2) Client Information</h3>
+    <ul>
+      <li><strong>Client Name:</strong> Sahibdeep Singh</li>
+      <li><strong>Organization / Farm Name:</strong> Akaal Farms (family-owned)</li>
+      <li><strong>Email:</strong> [private]</li>
+      <li><strong>Phone:</strong> [private]</li>
+    </ul>
+    <p class="small">
+      Per assignment guidance, sensitive contact details are masked. The business concept and name remain public for this semester.
+    </p>
+  </section>
+
+  <!-- 3) User Categories & Examples -->
+  <section aria-labelledby="user-cats-h3">
+    <h3 id="user-cats-h3">3) User Categories &amp; Examples</h3>
+    <ul>
+      <li>
+        <strong>Local Produce Buyers</strong> — small shops, restaurants, or neighbors who want to see what crops are currently grown and in which season.
+      </li>
+      <li>
+        <strong>Community / Family Visitors</strong> — people who want to visit the ranch, see cows and hens, or bring kids to see a working farm (if allowed).
+      </li>
+      <li>
+        <strong>Business Partners</strong> — people who may want to supply feed, buy in bulk, or collaborate on distribution/transport.
+      </li>
+      <li>
+        <strong>Students / General Audience</strong> — people who just want to learn about the crops and local farming practices.
+      </li>
+    </ul>
+  </section>
+
+  <!-- 4) Site Content Categories -->
+  <section aria-labelledby="content-cats-h3">
+    <h3 id="content-cats-h3">4) Site Content Categories</h3>
+    <ul>
+      <li>Farmer biography &amp; farm story</li>
+      <li>Crops (wheat, rice, corn, seasonal/“and so on”)</li>
+      <li>Livestock &amp; domestic animals (cows, hens, others)</li>
+      <li>Gallery (fields, harvest, animals, ranch views)</li>
+      <li>Visit / contact / inquiry info</li>
+      <li>Location / service area / map</li>
+      <li>Notes on sustainable or traditional practices (optional)</li>
+    </ul>
+  </section>
+
+  <!-- 5) Interactivity Plan -->
+  <section aria-labelledby="interactivity-h3">
+    <h3 id="interactivity-h3">5) Interactivity Plan (Read-Only &amp; Client-Safe)</h3>
+    <ul>
+      <li class="tag">jQuery UI</li>
+      <li class="tag">Lightbox gallery</li>
+      <li class="tag">AJAX (GET only)</li>
+      <li class="tag">Form validation</li>
+    </ul>
+    <ul>
+      <li>
+        <strong>Interactive Crop List</strong> — simple JS filter to show crops by season (e.g. “All / Rabi / Kharif / Year-round”) on the “Crops &amp; Products” page.
+      </li>
+      <li>
+        <strong>Livestock Gallery</strong> — thumbnails of the ranch animals that open in a lightbox. (Gallery page)
+      </li>
+      <li>
+        <strong>Availability Widget</strong> — small AJAX fetch of a local <code>data/availability.json</code> file that lists what's currently available. (Crops page)
+      </li>
+      <li>
+        <strong>Visit / Request Form</strong> — client-side validation for name, email/phone, and reason for contact. No database; after submit, show a “thank you” message or use <code>mailto:</code>. (Visit/Contact page)
+      </li>
+      <li>
+        <strong>FAQ Accordion</strong> — “Do you sell milk?”, “Can I visit?”, “What time are you open?” done with jQuery UI accordion. (Contact or About page)
+      </li>
+    </ul>
+    <p class="small">
+      No CRUD/back-end storage is used. All data loads are read-only from local JSON files under <code>/project/data/</code>.
+    </p>
+  </section>
+
+  <!-- 6) Wireframe & Site Map -->
+  <section aria-labelledby="wire-sitemap-h3">
+    <h3 id="wire-sitemap-h3">6) Wireframe &amp; Site Map</h3>
+    <div class="grid-2">
+      <figure>
+        <img src="images/wireframe.png" alt="Wireframe of the farm home page layout" style="width: 100%; height: auto;">
+        <figcaption>
+          Wireframe — Farm home page layout (hero image of field, quick links to crops, animals, contact).
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="images/sitemap.png" alt="Sitemap diagram of the farm website pages" style="width: 100%; height: auto;">
+        <figcaption>
+          Sitemap — Information architecture for Akaal Farms.
+        </figcaption>
+      </figure>
+    </div>
+    <div class="todo">
+      <strong>Action:</strong> Create the wireframe and sitemap in Draw.io, export PNGs to <code>/project/images/</code>, and update the image sources and links above.
+    </div>
+  </section>
+
+  <!-- 7) Page Design Matrix -->
+  <section aria-labelledby="page-design-h3">
+    <h3 id="page-design-h3">7) Page Design</h3>
+    <p>The website will include 5+ pages. Below is the design matrix describing each page.</p>
+    <table class="small" aria-label="Page design matrix">
+      <thead>
+        <tr>
+          <th>Page (file)</th>
+          <th>Purpose</th>
+          <th>Audience</th>
+          <th>Content</th>
+          <th>Data Entry?</th>
+          <th>Validations</th>
+          <th>Controls</th>
+          <th>Actions</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Home</strong> (<code>index.html</code>)</td>
+          <td>Introduce the farmer, highlight main crops and the ranch.</td>
+          <td>All visitors</td>
+          <td>Hero image, short intro to Sahibdeep, “View Crops,” “See Animals,” “Contact Us” CTAs.</td>
+          <td>No</td>
+          <td>—</td>
+          <td>Buttons, nav links</td>
+          <td>Navigate to Crops, Livestock, Contact.</td>
+          <td>Use background image of fields when available.</td>
+        </tr>
+        <tr>
+          <td><strong>About the Farm</strong> (<code>about.html</code>)</td>
+          <td>Tell the story of the farm, how long he has been farming, what land he uses.</td>
+          <td>Community, partners</td>
+          <td>Farmer bio, mission, photos of land.</td>
+          <td>No</td>
+          <td>—</td>
+          <td>Anchor links</td>
+          <td>Scroll to “Crops,” “Ranch,” “Family.”</td>
+          <td>Can include a short note on sustainable practices.</td>
+        </tr>
+        <tr>
+          <td><strong>Crops &amp; Products</strong> (<code>crops.html</code>)</td>
+          <td>Show what he grows: wheat, rice, corn, plus seasonal items.</td>
+          <td>Buyers, neighbors</td>
+          <td>List of crops, harvest times, availability pulled from <code>data/availability.json</code>.</td>
+          <td>No (display only)</td>
+          <td>JSON structure checked</td>
+          <td>Filter buttons</td>
+          <td>AJAX fetch &amp; render crops; filter by season.</td>
+          <td>Show units (kg, sacks) as text only.</td>
+        </tr>
+        <tr>
+          <td><strong>Livestock &amp; Ranch</strong> (<code>livestock.html</code>)</td>
+          <td>Showcase cows, hens, and other domestic animals.</td>
+          <td>Visitors, families</td>
+          <td>Animal cards with photo, short description.</td>
+          <td>No</td>
+          <td>Alt text required</td>
+          <td>Lightbox/gallery</td>
+          <td>Open larger photo on click.</td>
+          <td>Note about whether visits are allowed.</td>
+        </tr>
+        <tr>
+          <td><strong>Gallery</strong> (<code>gallery.html</code>)</td>
+          <td>Display photos of fields, harvests, tractors, animals.</td>
+          <td>Public</td>
+          <td>Thumbnails; grouped by “Crops” and “Animals.”</td>
+          <td>No</td>
+          <td>Image alt text</td>
+          <td>Lightbox</td>
+          <td>Show full image in modal.</td>
+          <td>Compress images for performance.</td>
+        </tr>
+        <tr>
+          <td><strong>Visit / Contact</strong> (<code>contact.html</code>)</td>
+          <td>Let people ask about produce, visits, or partnership.</td>
+          <td>All visitors</td>
+          <td>Form: name, email/phone, reason (buy crops, visit ranch, other), message; FAQ accordion.</td>
+          <td>Yes</td>
+          <td>Required fields; email or phone pattern.</td>
+          <td>Submit, reset, mailto link</td>
+          <td>Validate on client side; show success message.</td>
+          <td>No server-side storage; disclose in note.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 8) Dynamic Functionality Details & References -->
+  <section aria-labelledby="dynamic-func-h3">
+    <h3 id="dynamic-func-h3">8) Dynamic Functionality Details &amp; References</h3>
+    <ul>
+      <li>
+        <strong>availability.json (read-only)</strong> — Loaded via <code>fetch()</code> to populate the Crops page with current or typical availability (e.g. “wheat — Nov–Jan”).
+      </li>
+      <li>
+        <strong>Lightbox</strong> — For ranch and crop photos; makes animal pictures look nicer without leaving the page.
+      </li>
+      <li>
+        <strong>jQuery UI Accordion</strong> — For “Frequently Asked Questions” like “Do you sell milk?”, “Can I buy small quantity?”, “Can I visit on weekends?”
+      </li>
+      <li>
+        <strong>Simple calculator (optional)</strong> — JS to estimate cost for a crop based on quantity; runs on the Crops page only, client-side.
+      </li>
+    </ul>
+    <p class="todo">
+      Add example URLs of farm/gallery pages you like and mention why (good gallery, good contact form, good story layout).
+    </p>
+  </section>
+
+  <!-- 9) Notes, References, & Attribution -->
+  <section aria-labelledby="notes-h3">
+    <h3 id="notes-h3">9) Notes, References, &amp; Attribution</h3>
+    <ul>
+      <li>Content to be provided by client (real photos of fields, cows, hens, and actual crop list) — pending.</li>
+      <li>Images hosted locally under <code>/project/images/</code>; all images optimized and include descriptive <code>alt</code>.</li>
+      <li>Validation: run HTML &amp; CSS validators linked in footer on each page before submission.</li>
+      <li>Prepared by: Harsimran Singh — <time datetime="2025-11-09">Nov 9, 2025</time>.</li>
+    </ul>
+    <textarea rows="6" style="width:100%" placeholder="Add any additional notes, references, or acknowledgments here..."></textarea>
+  </section>
+</main>
+
+   <br>
+        <div data-include="components/footer.html"></div>
+   
+    <script src="https://lint.page/kit/67ff88.js" crossorigin="anonymous"></script>
+    <script src ="scripts/HTMLInclude.js"></script>
+</body>
+</html>
+
