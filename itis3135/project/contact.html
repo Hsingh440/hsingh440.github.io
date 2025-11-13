@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akaal Farms | Contact / Visit</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">Akaal Farms</div>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About the Farm</a></li>
+        <li><a href="crops.html">Crops &amp; Produce</a></li>
+        <li><a href="livestock-gallery.html">Livestock &amp; Gallery</a></li>
+        <li><a href="contact.html" class="active">Contact / Visit</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Contact / Visit</h2>
+    <p>Use the form below to ask about crops, visits, or partnerships. (Per class rules, this is client-side only.)</p>
+
+    <form action="#" method="get" class="contact-form">
+      <label for="name">Your Name*</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email*</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="reason">Reason for contacting</label>
+      <select id="reason" name="reason">
+        <option value="crops">Buy crops/produce</option>
+        <option value="visit">Visit the ranch</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5"></textarea>
+
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+
+    <h3>Other ways to reach us</h3>
+    <p>Email: <a href="mailto:example@akaalfarms.com">example@akaalfarms.com</a> (replace with client)</p>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Akaal Farms</p>
+    
+  </footer>
+</body>
+</html>
