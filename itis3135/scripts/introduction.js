@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
         imageUrl = URL.createObjectURL(pictureInput.files[0]);
       } else {
         // Otherwise, use the default image from your original introduction page
-        imageUrl = "images/0277.jpeg"; 
+        imageUrl = "images/0274.jpg"; 
       }
   
       // CHANGED: Matched all element IDs to your HTML (e.g., 'caption', 'aboutMe')
