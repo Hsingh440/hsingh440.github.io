@@ -1,0 +1,7 @@
+[
+  { "name": "Wheat",   "window": "Nov-Jan", "img": "../images/wheat.png",   "desc": "Staple crop, once per year." },
+  { "name": "Rice",    "window": "Aug-Oct", "img": "../images/rice.png",    "desc": "Seasonal paddy crop." },
+  { "name": "Corn",    "window": "Jun-Sep", "img": "../images/corn.png",    "desc": "Food/feed depending on harvest." },
+  { "name": "Seasonal","window": "Varies",  "img": "../images/seasonal.png","desc": "Other items as conditions allow." }
+]
+
